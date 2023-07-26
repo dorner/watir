@@ -30,7 +30,7 @@ module Watir
       # @example
       #   Watir::Wait.until { browser.text_field(name: "new_user_first_name").visible? }
       #
-      # @param [Fixnum] timeout How long to wait in seconds
+      # @param [Integer] timeout How long to wait in seconds
       # @param [String] message Message to raise if timeout is exceeded
       # @raise [TimeoutError] if timeout is exceeded
       #
@@ -50,7 +50,7 @@ module Watir
       # @example
       #   Watir::Wait.while { browser.text_field(name: "abrakadbra").present? }
       #
-      # @param [Fixnum] timeout How long to wait in seconds
+      # @param [Integer] timeout How long to wait in seconds
       # @param [String] message Message to raise if timeout is exceeded
       # @raise [TimeoutError] if timeout is exceeded
       #
@@ -166,7 +166,7 @@ module Watir
     #   browser.text_field(name: "new_user_first_name").when_present { |field| field.set "Watir" }
     #   browser.text_field(name: "new_user_first_name").when_present(60).text
     #
-    # @param [Fixnum] timeout seconds to wait before timing out
+    # @param [Integer] timeout seconds to wait before timing out
     #
     # @see Watir::Wait
     # @see Watir::Element#present?
@@ -190,7 +190,7 @@ module Watir
     # @example
     #   browser.button(name: "new_user_button_2").when_enabled.click
     #
-    # @param [Fixnum] timeout seconds to wait before timing out
+    # @param [Integer] timeout seconds to wait before timing out
     #
     # @see Watir::Wait
     # @see Watir::Element#enabled?
@@ -214,7 +214,7 @@ module Watir
     # @example
     #   browser.text_field(name: "new_user_first_name").wait_until_present
     #
-    # @param [Fixnum] timeout seconds to wait before timing out
+    # @param [Integer] timeout seconds to wait before timing out
     #
     # @see Watir::Wait
     # @see Watir::Element#present?
@@ -232,7 +232,7 @@ module Watir
     # @example
     #   browser.text_field(name: "abrakadbra").wait_while_present
     #
-    # @param [Fixnum] timeout seconds to wait before timing out
+    # @param [Integer] timeout seconds to wait before timing out
     #
     # @see Watir::Wait
     # @see Watir::Element#present?

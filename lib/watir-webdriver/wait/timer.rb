@@ -4,7 +4,7 @@ module Watir
 
       #
       # Executes given block until it returns true or exceeds timeout.
-      # @param [Fixnum] timeout
+      # @param [Integer] timeout
       # @yield block
       # @api private
       #

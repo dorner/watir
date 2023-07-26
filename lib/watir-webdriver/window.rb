@@ -57,8 +57,8 @@ module Watir
     # @example
     #   browser.window.resize_to 1600, 1200
     #
-    # @param [Fixnum] width
-    # @param [Fixnum] height
+    # @param [Integer] width
+    # @param [Integer] height
     #
 
     def resize_to(width, height)
@@ -74,8 +74,8 @@ module Watir
     # @example
     #   browser.window.move_to 300, 200
     #
-    # @param [Fixnum] x
-    # @param [Fixnum] y
+    # @param [Integer] x
+    # @param [Integer] y
     #
 
     def move_to(x, y)
